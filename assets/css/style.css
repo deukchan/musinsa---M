@@ -1,0 +1,956 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Roboto:wght@400;500;700&display=swap");
+@font-face {
+  font-family: "Musinsaot";
+  src: url(../fonts/musinsaot-Medium.woff2) format("woff2");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Musinsaot";
+  src: url(../fonts/musinsaot-Bold.woff2) format("woff2");
+  font-weight: 700;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+}
+
+*, :after, :before {
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+:root {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+       text-size-adjust: 100%;
+  cursor: default;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+     tab-size: 4;
+}
+
+html, body {
+  height: 100%;
+  line-height: 1;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+fieldset {
+  border: 0;
+}
+
+/* body 기초세팅 */
+body {
+  font-family: helvetica, "Gulim", sans-serif;
+  color: #000;
+  background-color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  min-width: 320px;
+  height: 100%;
+}
+
+.blind {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+.fix-nav .group-nav {
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: rgb(0, 0, 0);
+  box-sizing: border-box;
+  z-index: 550;
+  height: 60px;
+  color: #fff;
+  text-align: center;
+}
+.fix-nav .group-nav span {
+  display: block;
+  padding-top: 1px;
+  line-height: 17px;
+  font-size: 11px;
+}
+.fix-nav .group-nav .mypage-area .btn-mypage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  margin: 3px;
+  background-color: rgb(236, 236, 236);
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 100%;
+  overflow: hidden;
+}
+.fix-nav .group-nav .mypage-area span {
+  padding-top: 6px;
+}
+
+.fix-btn {
+  position: fixed;
+  bottom: 80px;
+  right: 10px;
+  z-index: 300;
+}
+.fix-btn .btn {
+  display: block;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  position: relative;
+  padding: 5px;
+  box-sizing: border-box;
+  border-radius: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.fix-btn .btn + .btn {
+  margin-top: 14px;
+}
+.fix-btn .btn.all {
+  font-size: 13px;
+  font-family: "Musinsaot";
+  line-height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+.header .group-header {
+  height: 50px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .group-header .btn {
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+}
+.header .group-header .logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.header .group-header .flex-left {
+  margin-left: 5px;
+}
+.header .group-header .flex-right {
+  display: flex;
+  margin-right: 5px;
+}
+.header .gnb {
+  background: #fff;
+}
+.header .gnb .menu-list {
+  display: flex;
+  justify-content: space-evenly;
+  overflow: auto hidden;
+}
+.header .gnb .menu-list::-webkit-scrollbar {
+  display: none;
+}
+.header .gnb .menu-item {
+  position: relative;
+  height: 45px;
+  padding: 0px 10px;
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+}
+.header .gnb .active {
+  font-weight: bold;
+}
+.header .gnb .active::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 10px;
+  width: calc(100% - 20px);
+  height: 2px;
+  background-color: rgb(0, 0, 0);
+}
+.header .gnb .point.blue {
+  color: rgb(0, 145, 250);
+}
+.header .gnb.fix {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 200;
+}
+
+.footer {
+  padding: 40px 0px 120px;
+  position: relative;
+  background-color: rgb(243, 243, 243);
+  font-size: 12px;
+  line-height: 18px;
+  color: rgb(145, 145, 145);
+  text-align: center;
+  z-index: 10;
+}
+.footer .group-footer .customer-area .call-center {
+  font-weight: bold;
+}
+.footer .group-footer .customer-area .btn-box {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+.footer .group-footer .customer-area .btn-box .btn {
+  width: 120px;
+  height: 26px;
+  background-color: rgb(229, 229, 229);
+  border-radius: 2px;
+  line-height: 26px;
+  font-weight: 700;
+}
+.footer .group-footer .link-area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 16px;
+}
+.footer .group-footer .link-area .link {
+  margin: 0 8px 8px 8px;
+  font-size: 13px;
+  line-height: 20px;
+}
+.footer .group-footer .link-area .link.point {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.footer .group-footer .service-area {
+  margin-top: 32px;
+  font-size: 12px;
+  line-height: 18px;
+}
+.footer .group-footer .service-area .headline-sm {
+  font-weight: bold;
+}
+.footer .group-footer .service-area .desc {
+  margin: 8px 0 10px;
+}
+.footer .group-footer .service-area .btn-more {
+  display: inline-flex;
+  align-items: center;
+  height: 26px;
+  padding: 0px 10px 0px 12px;
+  border: 1px solid rgb(229, 229, 229);
+  border-radius: 2px;
+  font-weight: 700;
+  color: rgb(145, 145, 145);
+}
+.footer .group-footer .info-area .btn-info {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 32px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 18px;
+  color: rgb(145, 145, 145);
+}
+.footer .group-footer .info-area .btn-info svg {
+  margin-left: 4px;
+}
+.footer .group-footer .info-area .info {
+  display: none;
+  margin-top: 10px;
+}
+.footer .group-footer .info-area .info.active {
+  display: block;
+}
+.footer .group-footer .sns-area {
+  margin-top: 32px;
+}
+.footer .group-footer .sns-area .sns-list {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+.sc-main .swiper.mainSwiper .swiper-slide a {
+  position: relative;
+}
+.sc-main .swiper.mainSwiper .swiper-slide a .img-box {
+  width: 100%;
+}
+.sc-main .swiper.mainSwiper .swiper-slide a .img-box img {
+  display: block;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.sc-main .swiper.mainSwiper .swiper-slide a .txt-box {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  left: 40px;
+  z-index: 20;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: "Musinsaot";
+}
+.sc-main .swiper.mainSwiper .swiper-slide a .txt-box .title {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  overflow-wrap: break-word;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-weight: 500;
+  font-size: 22px;
+}
+.sc-main .swiper.mainSwiper .swiper-slide a .txt-box .desc {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-top: 10px;
+  font-size: 13px;
+}
+.sc-main .swiper.mainSwiper .swiper-pagination-fraction {
+  width: auto;
+  left: auto;
+  right: 0;
+  bottom: 0px;
+  width: 64px;
+  height: 26px;
+  padding: 0px 4px 0px 8px;
+  border-radius: 3px 0px 0px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.sc-main .swiper.mainSwiper .swiper-pagination-fraction .swiper-pagination-current {
+  padding-right: 3px;
+}
+.sc-main .swiper.mainSwiper .swiper-pagination-fraction .swiper-pagination-total {
+  padding-left: 3px;
+}
+.sc-main .swiper.mainSwiper .swiper-pagination {
+  font-family: "Musinsaot";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 11px;
+  color: rgb(255, 255, 255);
+}
+.sc-main .swiper.mainSwiper svg {
+  position: absolute;
+  bottom: 7px;
+  right: 2px;
+  z-index: 200;
+}
+
+.sc-category {
+  margin-top: 20px;
+}
+.sc-category .group-category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sc-category .group-category .cate-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 430px;
+  width: 100%;
+  padding: 0 15px;
+}
+.sc-category .group-category .cate-item {
+  width: 20%;
+  max-width: 80px;
+  display: block;
+  position: relative;
+}
+.sc-category .group-category .cate-item .img-box {
+  margin: 5px;
+}
+.sc-category .group-category .cate-item .img-box img {
+  border-radius: 30%;
+}
+.sc-category .group-category .cate-item .txt-box {
+  text-align: center;
+}
+.sc-category .group-category .cate-item .txt-box .sort {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
+}
+.sc-category .group-category .cate-item:nth-child(n+6) {
+  margin-top: 16px;
+}
+
+.sc-recommend {
+  margin-top: 48px;
+}
+.sc-recommend .headline {
+  padding: 11px 15px;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  overflow-wrap: break-word;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-weight: 700;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+}
+.sc-recommend .headline .light {
+  color: rgb(170, 170, 170);
+}
+.sc-recommend .recomm-list {
+  padding: 8px 15px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+}
+.sc-recommend .recomm-item {
+  width: calc(33.3333333333% - 3px);
+  margin-bottom: 20px;
+}
+.sc-recommend .recomm-item .img-wrap {
+  position: relative;
+}
+.sc-recommend .recomm-item .img-box {
+  width: 100%;
+}
+.sc-recommend .recomm-item .img-box img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.sc-recommend .recomm-item .btn-like {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  width: 40px;
+  height: 40px;
+  z-index: 10;
+}
+.sc-recommend .recomm-item .txt-box {
+  display: block;
+  padding: 0px 2px 0px 0px;
+  margin-top: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.sc-recommend .recomm-item .txt-box .title {
+  font-size: 12px;
+  color: rgb(110, 110, 110);
+}
+.sc-recommend .recomm-item .txt-box .price-box {
+  font-family: "Musinsaot";
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  font-size: 13px;
+}
+.sc-recommend .recomm-item .txt-box .price-box .sale {
+  font-size: 12px;
+  color: rgb(255, 0, 0);
+}
+.sc-recommend .btn-more {
+  margin: 4px 15px 0 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  border: 1px solid rgb(229, 229, 229);
+  border-radius: 24px;
+  font-weight: 700;
+  font-size: 13px;
+  font-weight: bold;
+}
+.sc-recommend .btn-more svg {
+  margin-left: 4px;
+}
+
+.sc-brand {
+  margin-top: 48px;
+}
+.sc-brand .headline {
+  padding: 11px 15px;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  overflow-wrap: break-word;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-weight: 700;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+}
+.sc-brand .headline .light {
+  color: rgb(170, 170, 170);
+}
+.sc-brand .swiper.brandSwiper {
+  margin: 0 15px;
+}
+.sc-brand .swiper.brandSwiper .swiper-wrapper {
+  margin-top: 8px;
+  display: flex;
+}
+.sc-brand .swiper.brandSwiper .swiper-slide {
+  margin-right: 16px;
+}
+.sc-brand .swiper.brandSwiper .swiper-slide a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sc-brand .swiper.brandSwiper .swiper-slide a .img-box {
+  width: 64px;
+  height: 64px;
+  border: 1px solid rgb(243, 243, 243);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sc-brand .swiper.brandSwiper .swiper-slide a .img-box img {
+  width: 60%;
+  height: 60%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.sc-brand .swiper.brandSwiper .swiper-slide a .txt-box {
+  text-align: center;
+}
+.sc-brand .swiper.brandSwiper .swiper-slide a .txt-box .title {
+  display: block;
+  margin-top: 4px;
+  font-size: 12px;
+  color: rgb(0, 0, 0);
+  white-space: initial;
+}
+.sc-brand .swiper.brandSwiper .swiper-slide:last-child {
+  margin-right: 0;
+}
+.sc-brand .swiper.brandSwiper .swiper-slide.active .img-box {
+  border: 1px solid #000;
+}
+.sc-brand .product-list {
+  padding: 8px 15px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+}
+.sc-brand .product-item {
+  width: calc(33.3333333333% - 3px);
+  margin-bottom: 20px;
+}
+.sc-brand .product-item .img-wrap {
+  position: relative;
+}
+.sc-brand .product-item .img-box {
+  position: relative;
+  width: 100%;
+}
+.sc-brand .product-item .img-box img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.sc-brand .product-item .btn-like {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  width: 40px;
+  height: 40px;
+  z-index: 10;
+}
+.sc-brand .product-item .txt-box {
+  display: block;
+  padding: 0px 2px 0px 0px;
+  margin-top: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.sc-brand .product-item .txt-box .title {
+  font-size: 12px;
+  color: rgb(110, 110, 110);
+}
+.sc-brand .product-item .txt-box .price-box {
+  font-family: "Musinsaot";
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  font-size: 13px;
+}
+.sc-brand .product-item .txt-box .price-box .sale {
+  font-size: 12px;
+  color: rgb(255, 0, 0);
+}
+.sc-brand .btn-more {
+  margin: 4px 15px 0 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  border: 1px solid rgb(229, 229, 229);
+  border-radius: 24px;
+  font-weight: 700;
+  font-size: 13px;
+  font-weight: bold;
+}
+.sc-brand .btn-more svg {
+  margin-left: 4px;
+}
+
+.sc-special {
+  margin-top: 48px;
+}
+.sc-special .headline {
+  padding: 11px 15px;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  overflow-wrap: break-word;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-weight: 700;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+}
+.sc-special .headline .light {
+  color: rgb(170, 170, 170);
+}
+.sc-special .swiper.btnSwiper {
+  margin-left: 15px;
+}
+.sc-special .swiper.btnSwiper .swiper-slide {
+  font-size: 11px;
+  text-align: center;
+  white-space: nowrap;
+  border: 1px solid rgb(229, 229, 229);
+  color: rgb(0, 0, 0);
+  border-radius: 20px;
+}
+.sc-special .swiper.btnSwiper .swiper-slide.active {
+  background: #000;
+  color: #fff;
+}
+.sc-special .swiper.btnSwiper .btn-special {
+  padding: 10px 20px;
+  width: 100%;
+  height: 100%;
+}
+.sc-special .swiper.specialSwiper {
+  margin-top: 16px;
+  padding: 0 15px;
+}
+.sc-special .swiper.specialSwiper .special-wrap {
+  position: relative;
+}
+.sc-special .swiper.specialSwiper .special-wrap .img-box img {
+  width: 100%;
+  border-radius: 16px;
+}
+.sc-special .swiper.specialSwiper .special-wrap .txt-box {
+  position: absolute;
+  left: 20px;
+  bottom: 30px;
+  z-index: 10;
+}
+.sc-special .swiper.specialSwiper .special-wrap .txt-box .special {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  color: #fff;
+  margin-bottom: 8px;
+}
+.sc-special .swiper.specialSwiper .special-wrap .txt-box .special img {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+  border-radius: 8px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.sc-special .swiper.specialSwiper .special-wrap .txt-box .desc {
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+  overflow-wrap: break-word;
+  word-break: keep-all;
+  white-space: pre-wrap;
+}
+.sc-special .swiper.specialSwiper .goods-list {
+  margin-top: 15px;
+  display: flex;
+  gap: 3px;
+}
+.sc-special .swiper.specialSwiper .goods-list .goods-item {
+  flex: 1;
+}
+.sc-special .swiper.specialSwiper .goods-list .goods-item .img-wrap {
+  position: relative;
+  padding-bottom: 100%;
+}
+.sc-special .swiper.specialSwiper .goods-list .goods-item .img-box {
+  width: 100%;
+}
+.sc-special .swiper.specialSwiper .goods-list .goods-item .img-box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.sc-special .swiper.specialSwiper .goods-list .goods-item .btn-like {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  width: 40px;
+  height: 40px;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sc-special .swiper.specialSwiper .goods-list .goods-item .txt-box {
+  display: block;
+  margin-top: 8px;
+  padding: 0 2px 0 8px;
+}
+.sc-special .swiper.specialSwiper .goods-list .goods-item .txt-box .title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 12px;
+  color: rgb(110, 110, 110);
+}
+.sc-special .swiper.specialSwiper .goods-list .goods-item .txt-box .price-box {
+  font-family: "Musinsaot";
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+}
+.sc-special .swiper.specialSwiper .goods-list .goods-item .txt-box .price-box .sale {
+  color: rgb(255, 0, 0);
+}
+
+.sc-feed {
+  margin-top: 48px;
+}
+.sc-feed .swiper.feedSwiper .swiper-slide .img-box img {
+  width: 100%;
+}
+.sc-feed .swiper.feedSwiper .swiper-pagination-bullet {
+  width: 6px;
+  height: 6px;
+  margin: 0 3px;
+  background: #fff;
+}
+.sc-feed .swiper-text {
+  padding: 24px 15px;
+}
+.sc-feed .swiper-text .brand {
+  display: block;
+}
+.sc-feed .swiper-text .title {
+  margin-top: 5px;
+  font-weight: 500;
+  font-size: 22px;
+  color: rgb(0, 0, 0);
+  overflow-wrap: break-word;
+  word-break: keep-all;
+  white-space: pre-wrap;
+  font-family: Musinsa, "Apple SD Gothic Neo", Roboto, "Noto Sans KR", "sans-serif";
+}
+.sc-feed .swiper-text .desc {
+  margin-top: 5px;
+  font-size: 13px;
+  color: rgb(110, 110, 110);
+}
+.sc-feed .goods-list {
+  margin-top: 15px;
+  display: flex;
+  gap: 3px;
+  margin: 15px 12px 24px 12px;
+}
+.sc-feed .goods-item {
+  width: calc((100% - 6px) / 3);
+}
+.sc-feed .goods-item .img-wrap {
+  position: relative;
+}
+.sc-feed .goods-item .img-box {
+  position: relative;
+}
+.sc-feed .goods-item .img-box img {
+  width: 100%;
+  min-height: 110px;
+}
+.sc-feed .goods-item .btn-like {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  width: 40px;
+  height: 40px;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sc-feed .goods-item .txt-box {
+  display: block;
+  margin-top: 8px;
+  padding: 0 2px 0 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 12px;
+  color: rgb(110, 110, 110);
+}
+.sc-feed .goods-item .txt-box .price-box {
+  font-family: "Musinsaot";
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+}
+.sc-feed .goods-item .txt-box .price-box .sale {
+  color: rgb(255, 0, 0);
+}
+.sc-feed .btn-more {
+  margin: 0 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  border: 1px solid rgb(229, 229, 229);
+  border-radius: 24px;
+  font-weight: 700;
+  font-size: 13px;
+  transition-property: background-color, color;
+  transition-duration: 0.3s;
+  transition-delay: 2s;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+.sc-live {
+  margin-top: 48px;
+  padding-bottom: 48px;
+}
+.sc-live .headline {
+  padding-top: 11px;
+  padding-left: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 700;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+}
+.sc-live .sub-title {
+  display: block;
+  color: rgb(51, 51, 51);
+  margin-top: 3px;
+  font-size: 14px;
+  padding-bottom: 11px;
+  padding-left: 15px;
+}
+.sc-live .swiper.liveSwiper {
+  padding: 0 15px;
+}
+.sc-live .swiper.liveSwiper .swiper-slide .img-box {
+  position: relative;
+}
+.sc-live .swiper.liveSwiper .swiper-slide .img-box img {
+  width: 100%;
+  border-radius: 6px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.sc-live .swiper.liveSwiper .swiper-slide .img-box .time {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 10;
+  min-width: 47px;
+  height: 20px;
+  padding: 2px 6px;
+  border-radius: 2px;
+  box-sizing: border-box;
+  background-color: rgb(0, 0, 0);
+  font-size: 11px;
+  color: rgb(255, 255, 255);
+}
+.sc-live .swiper.liveSwiper .swiper-slide .txt-box .desc {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  margin-top: 8px;
+  font-size: 13px;
+  color: rgb(0, 0, 0);
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}

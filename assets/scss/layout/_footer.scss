@@ -1,0 +1,94 @@
+.footer{
+    padding: 40px 0px 120px;
+    position: relative;
+    background-color: rgb(243, 243, 243);
+    font-size: 12px;
+    line-height: 18px;
+    color: rgb(145, 145, 145);
+    text-align: center;
+    z-index: 10;
+    .group-footer{
+        .customer-area{
+            .call-center{ font-weight: bold; }
+            .btn-box{
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+                margin-top: 10px;
+                .btn{
+                    width: 120px;
+                    height: 26px;
+                    background-color: rgb(229, 229, 229);
+                    border-radius: 2px;
+                    line-height: 26px;
+                    font-weight: 700;
+                }
+            }
+        }
+        .link-area{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 16px;
+            .link{
+                margin: 0 8px 8px 8px;
+                font-size: 13px;
+                line-height: 20px;
+            }
+            .link.point{
+                font-weight: bold;
+                text-decoration: underline;
+            }
+        }
+        .service-area{
+            margin-top: 32px;
+            font-size: 12px;
+            line-height: 18px;
+            .headline-sm{
+                font-weight: bold;   
+            }
+            .desc{
+                margin: 8px 0 10px;
+            }
+            .btn-more{
+                display: inline-flex;
+                align-items: center;
+                height: 26px;
+                padding: 0px 10px 0px 12px;
+                border: 1px solid rgb(229, 229, 229);
+                border-radius: 2px;
+                font-weight: 700;
+                color: rgb(145, 145, 145);
+            }
+        }
+        .info-area{
+            .btn-info{
+                display: inline-flex;
+                align-items: center;
+                margin-top: 32px;
+                font-size: 12px;
+                font-weight: 700;
+                line-height: 18px;
+                color: rgb(145, 145, 145);
+                svg{
+                    margin-left: 4px;
+                }
+            }
+            .info {
+                display: none;
+                margin-top: 10px;
+                &.active{
+                    display: block;
+                }
+            }
+        }
+        .sns-area{
+            margin-top: 32px;
+            .sns-list{
+                display: flex;
+                gap: 16px;
+                justify-content: center;
+            }
+        }
+    }
+}

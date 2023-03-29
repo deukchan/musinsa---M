@@ -1,0 +1,86 @@
+.blind {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+}
+.fix-nav{
+    .group-nav{
+        padding: 0 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        background-color: rgb(0, 0, 0);
+        box-sizing: border-box;
+        z-index: 550;
+        height: 60px;
+        color: #fff;
+        text-align: center;
+        span{
+            display: block;
+            padding-top: 1px;
+            line-height: 17px;
+            font-size: 11px;
+        }
+        .category-area{}
+        .snab-area{}
+        .home-area{}
+        .like-area{}
+        .mypage-area{
+            .btn-mypage{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 24px;
+                height: 24px;
+                margin: 3px;
+                background-color: rgb(236, 236, 236);
+                border: 1px solid rgb(255, 255, 255);
+                border-radius: 100%;
+                overflow: hidden;
+            }
+            span{
+                padding-top: 6px;
+            }
+        }
+    }
+}
+
+.fix-btn{
+    position: fixed;
+    bottom: 80px;
+    right: 10px;
+    z-index: 300;
+    .btn{
+        display: block;
+        width: 40px;
+        height: 40px;
+        overflow: hidden;
+        position: relative;
+        padding: 5px;
+        box-sizing: border-box;
+        border-radius: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        &+.btn{
+            margin-top: 14px;
+        }
+        &.top{}
+        &.recent{}
+        &.all{
+            font-size: 13px;
+            font-family: 'Musinsaot';
+            line-height: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+        }
+    }
+}

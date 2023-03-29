@@ -1,0 +1,88 @@
+{
+    "items":[
+        {
+            "id":0,
+            "sort":"0",
+            "thumbnail":"./assets/images/brand/goods/gd-01.jpg",
+            "title": "젤-1090 - 피드몬트 그레이:타막 / 1203A241-020",
+            "price": 99000
+        },
+        {
+            "id":0,
+            "sort":"0",
+            "thumbnail":"./assets/images/brand/goods/gd-02.jpg",
+            "title": "조그 100 2 (4E) - 블랙:블랙 / TJG138-9090",
+            "price": 69000
+        },
+        {
+            "id":0,
+            "sort":"0",
+            "thumbnail":"./assets/images/brand/goods/gd-03.jpg",
+            "title": "젤-1090 - 미드 그레이:블랙 / 1203A159-020",
+            "price": 99000
+        },
+        {
+            "id":0,
+            "sort":"0",
+            "thumbnail":"./assets/images/brand/goods/gd-04.jpg",
+            "title": "젤-1130 - 화이트:미드나이트 / 1202A164-110",
+            "price": 99000
+        },
+        {
+            "id":0,
+            "sort":"0",
+            "thumbnail":"./assets/images/brand/goods/gd-05.jpg",
+            "title": "젤-1090 V2 SMU - 폴라 쉐이드:크림 / 1203A266-020",
+            "price": 99000
+        },
+        {
+            "id":0,
+            "sort":"0",
+            "thumbnail":"./assets/images/brand/goods/gd-06.jpg",
+            "title": "젤-1130 - 화이트:버치 / 1202A163-100",
+            "price": 109000
+        },
+        {
+            "id":0,
+            "sort":"1",
+            "thumbnail":"./assets/images/brand/goods/gd-07.jpg",
+            "title": "가젤 - 블랙 / BB5476",
+            "price": 129000
+        },
+        {
+            "id":0,
+            "sort":"1",
+            "thumbnail":"./assets/images/brand/goods/gd-08.jpg",
+            "title": "슈퍼스타 - 화이트:블랙 / EG4958",
+            "price": 119000
+        },
+        {
+            "id":0,
+            "sort":"1",
+            "thumbnail":"./assets/images/brand/goods/gd-09.jpg",
+            "title": "BW 아미 - 화이트:그레이 / HP5515",
+            "price": 99000
+        },
+        {
+            "id":0,
+            "sort":"1",
+            "thumbnail":"./assets/images/brand/goods/gd-10.jpg",
+            "title": "BW 아미 - 화이트 / BZ0579",
+            "price": 99900
+        },
+        {
+            "id":0,
+            "sort":"1",
+            "thumbnail":"./assets/images/brand/goods/gd-11.jpg",
+            "title": "센테니얼 85 로우 - 화이트:블루 / IF5419",
+            "price": 139000
+        },
+        {
+            "id":0,
+            "sort":"1",
+            "thumbnail":"./assets/images/brand/goods/gd-12.jpg",
+            "title": "베켄바우어 트랙탑 - 블랙 / IA4778",
+            "price": 89000
+        }
+    ]
+}
