@@ -317,19 +317,19 @@ body {
   justify-content: center;
 }
 
-.sc-main .swiper.mainSwiper .swiper-slide a {
+.sc-main .mainswiper .swiper-slide a {
   position: relative;
 }
-.sc-main .swiper.mainSwiper .swiper-slide a .img-box {
+.sc-main .mainswiper .swiper-slide a .img-box {
   width: 100%;
 }
-.sc-main .swiper.mainSwiper .swiper-slide a .img-box img {
+.sc-main .mainswiper .swiper-slide a .img-box img {
   display: block;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.sc-main .swiper.mainSwiper .swiper-slide a .txt-box {
+.sc-main .mainswiper .swiper-slide a .txt-box {
   position: absolute;
   right: 40px;
   bottom: 40px;
@@ -339,7 +339,7 @@ body {
   text-align: center;
   font-family: "Musinsaot";
 }
-.sc-main .swiper.mainSwiper .swiper-slide a .txt-box .title {
+.sc-main .mainswiper .swiper-slide a .txt-box .title {
   display: -webkit-box;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -350,14 +350,14 @@ body {
   font-weight: 500;
   font-size: 22px;
 }
-.sc-main .swiper.mainSwiper .swiper-slide a .txt-box .desc {
+.sc-main .mainswiper .swiper-slide a .txt-box .desc {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   margin-top: 10px;
   font-size: 13px;
 }
-.sc-main .swiper.mainSwiper .swiper-pagination-fraction {
+.sc-main .mainswiper .swiper-pagination-fraction {
   width: auto;
   left: auto;
   right: 0;
@@ -368,13 +368,13 @@ body {
   border-radius: 3px 0px 0px;
   background-color: rgba(0, 0, 0, 0.2);
 }
-.sc-main .swiper.mainSwiper .swiper-pagination-fraction .swiper-pagination-current {
+.sc-main .mainswiper .swiper-pagination-fraction .swiper-pagination-current {
   padding-right: 3px;
 }
-.sc-main .swiper.mainSwiper .swiper-pagination-fraction .swiper-pagination-total {
+.sc-main .mainswiper .swiper-pagination-fraction .swiper-pagination-total {
   padding-left: 3px;
 }
-.sc-main .swiper.mainSwiper .swiper-pagination {
+.sc-main .mainswiper .swiper-pagination {
   font-family: "Musinsaot";
   display: flex;
   justify-content: center;
@@ -383,7 +383,7 @@ body {
   font-size: 11px;
   color: rgb(255, 255, 255);
 }
-.sc-main .swiper.mainSwiper svg {
+.sc-main .mainswiper svg {
   position: absolute;
   bottom: 7px;
   right: 2px;
@@ -540,22 +540,22 @@ body {
 .sc-brand .headline .light {
   color: rgb(170, 170, 170);
 }
-.sc-brand .swiper.brandSwiper {
+.sc-brand .brandswiper {
   margin: 0 15px;
 }
-.sc-brand .swiper.brandSwiper .swiper-wrapper {
+.sc-brand .brandswiper .swiper-wrapper {
   margin-top: 8px;
   display: flex;
 }
-.sc-brand .swiper.brandSwiper .swiper-slide {
+.sc-brand .brandswiper .swiper-slide {
   margin-right: 16px;
 }
-.sc-brand .swiper.brandSwiper .swiper-slide a {
+.sc-brand .brandswiper .swiper-slide a {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.sc-brand .swiper.brandSwiper .swiper-slide a .img-box {
+.sc-brand .brandswiper .swiper-slide a .img-box {
   width: 64px;
   height: 64px;
   border: 1px solid rgb(243, 243, 243);
@@ -564,26 +564,26 @@ body {
   justify-content: center;
   align-items: center;
 }
-.sc-brand .swiper.brandSwiper .swiper-slide a .img-box img {
+.sc-brand .brandswiper .swiper-slide a .img-box img {
   width: 60%;
   height: 60%;
   -o-object-fit: contain;
      object-fit: contain;
 }
-.sc-brand .swiper.brandSwiper .swiper-slide a .txt-box {
+.sc-brand .brandswiper .swiper-slide a .txt-box {
   text-align: center;
 }
-.sc-brand .swiper.brandSwiper .swiper-slide a .txt-box .title {
+.sc-brand .brandswiper .swiper-slide a .txt-box .title {
   display: block;
   margin-top: 4px;
   font-size: 12px;
   color: rgb(0, 0, 0);
   white-space: initial;
 }
-.sc-brand .swiper.brandSwiper .swiper-slide:last-child {
+.sc-brand .brandswiper .swiper-slide:last-child {
   margin-right: 0;
 }
-.sc-brand .swiper.brandSwiper .swiper-slide.active .img-box {
+.sc-brand .brandswiper .swiper-slide.active .img-box {
   border: 1px solid #000;
 }
 .sc-brand .product-list {
@@ -675,10 +675,10 @@ body {
 .sc-special .headline .light {
   color: rgb(170, 170, 170);
 }
-.sc-special .swiper.btnSwiper {
+.sc-special .btnswiper {
   margin-left: 15px;
 }
-.sc-special .swiper.btnSwiper .swiper-slide {
+.sc-special .btnswiper .swiper-slide {
   font-size: 11px;
   text-align: center;
   white-space: nowrap;
@@ -686,40 +686,40 @@ body {
   color: rgb(0, 0, 0);
   border-radius: 20px;
 }
-.sc-special .swiper.btnSwiper .swiper-slide.active {
+.sc-special .btnswiper .swiper-slide.active {
   background: #000;
   color: #fff;
 }
-.sc-special .swiper.btnSwiper .btn-special {
+.sc-special .btnswiper .btn-special {
   padding: 10px 20px;
   width: 100%;
   height: 100%;
 }
-.sc-special .swiper.specialSwiper {
+.sc-special .specialswiper {
   margin-top: 16px;
   padding: 0 15px;
 }
-.sc-special .swiper.specialSwiper .special-wrap {
+.sc-special .specialswiper .special-wrap {
   position: relative;
 }
-.sc-special .swiper.specialSwiper .special-wrap .img-box img {
+.sc-special .specialswiper .special-wrap .img-box img {
   width: 100%;
   border-radius: 16px;
 }
-.sc-special .swiper.specialSwiper .special-wrap .txt-box {
+.sc-special .specialswiper .special-wrap .txt-box {
   position: absolute;
   left: 20px;
   bottom: 30px;
   z-index: 10;
 }
-.sc-special .swiper.specialSwiper .special-wrap .txt-box .special {
+.sc-special .specialswiper .special-wrap .txt-box .special {
   display: flex;
   align-items: center;
   font-size: 13px;
   color: #fff;
   margin-bottom: 8px;
 }
-.sc-special .swiper.specialSwiper .special-wrap .txt-box .special img {
+.sc-special .specialswiper .special-wrap .txt-box .special img {
   display: block;
   width: 32px;
   height: 32px;
@@ -728,29 +728,29 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.sc-special .swiper.specialSwiper .special-wrap .txt-box .desc {
+.sc-special .specialswiper .special-wrap .txt-box .desc {
   font-size: 15px;
   color: rgb(255, 255, 255);
   overflow-wrap: break-word;
   word-break: keep-all;
   white-space: pre-wrap;
 }
-.sc-special .swiper.specialSwiper .goods-list {
+.sc-special .specialswiper .goods-list {
   margin-top: 15px;
   display: flex;
   gap: 3px;
 }
-.sc-special .swiper.specialSwiper .goods-list .goods-item {
+.sc-special .specialswiper .goods-list .goods-item {
   flex: 1;
 }
-.sc-special .swiper.specialSwiper .goods-list .goods-item .img-wrap {
+.sc-special .specialswiper .goods-list .goods-item .img-wrap {
   position: relative;
   padding-bottom: 100%;
 }
-.sc-special .swiper.specialSwiper .goods-list .goods-item .img-box {
+.sc-special .specialswiper .goods-list .goods-item .img-box {
   width: 100%;
 }
-.sc-special .swiper.specialSwiper .goods-list .goods-item .img-box img {
+.sc-special .specialswiper .goods-list .goods-item .img-box img {
   position: absolute;
   top: 0;
   left: 0;
@@ -759,7 +759,7 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.sc-special .swiper.specialSwiper .goods-list .goods-item .btn-like {
+.sc-special .specialswiper .goods-list .goods-item .btn-like {
   position: absolute;
   right: 0px;
   bottom: 0px;
@@ -770,36 +770,36 @@ body {
   justify-content: center;
   align-items: center;
 }
-.sc-special .swiper.specialSwiper .goods-list .goods-item .txt-box {
+.sc-special .specialswiper .goods-list .goods-item .txt-box {
   display: block;
   margin-top: 8px;
   padding: 0 2px 0 8px;
 }
-.sc-special .swiper.specialSwiper .goods-list .goods-item .txt-box .title {
+.sc-special .specialswiper .goods-list .goods-item .txt-box .title {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   font-size: 12px;
   color: rgb(110, 110, 110);
 }
-.sc-special .swiper.specialSwiper .goods-list .goods-item .txt-box .price-box {
+.sc-special .specialswiper .goods-list .goods-item .txt-box .price-box {
   font-family: "Musinsaot";
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-weight: 500;
 }
-.sc-special .swiper.specialSwiper .goods-list .goods-item .txt-box .price-box .sale {
+.sc-special .specialswiper .goods-list .goods-item .txt-box .price-box .sale {
   color: rgb(255, 0, 0);
 }
 
 .sc-feed {
   margin-top: 48px;
 }
-.sc-feed .swiper.feedSwiper .swiper-slide .img-box img {
+.sc-feed .feedswiper .swiper-slide .img-box img {
   width: 100%;
 }
-.sc-feed .swiper.feedSwiper .swiper-pagination-bullet {
+.sc-feed .feedswiper .swiper-pagination-bullet {
   width: 6px;
   height: 6px;
   margin: 0 3px;
@@ -915,19 +915,19 @@ body {
   padding-bottom: 11px;
   padding-left: 15px;
 }
-.sc-live .swiper.liveSwiper {
+.sc-live .liveswiper {
   padding: 0 15px;
 }
-.sc-live .swiper.liveSwiper .swiper-slide .img-box {
+.sc-live .liveswiper .swiper-slide .img-box {
   position: relative;
 }
-.sc-live .swiper.liveSwiper .swiper-slide .img-box img {
+.sc-live .liveswiper .swiper-slide .img-box img {
   width: 100%;
   border-radius: 6px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.sc-live .swiper.liveSwiper .swiper-slide .img-box .time {
+.sc-live .liveswiper .swiper-slide .img-box .time {
   position: absolute;
   top: 8px;
   left: 8px;
@@ -941,7 +941,7 @@ body {
   font-size: 11px;
   color: rgb(255, 255, 255);
 }
-.sc-live .swiper.liveSwiper .swiper-slide .txt-box .desc {
+.sc-live .liveswiper .swiper-slide .txt-box .desc {
   display: -webkit-box;
   overflow: hidden;
   text-overflow: ellipsis;

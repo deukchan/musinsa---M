@@ -17,7 +17,7 @@ $(function(){
     /**
      * @메인슬라이드
      */  
-    var MainSwiper = new Swiper(".mainSwiper", {
+    var MainSwiper = new Swiper(".mainswiper", {
       centeredSlides: true,
       loop: true,
       autoplay: {
@@ -33,7 +33,7 @@ $(function(){
     /**
      * @브랜드스와이퍼
      */
-    var brandSwiper = new Swiper(".brandSwiper", {
+    var brandSwiper = new Swiper(".brandswiper", {
       slidesPerView: 3.5,
       spaceBetween: 5,
       breakpoints:{
@@ -57,7 +57,7 @@ $(function(){
     });
 
 
-    $('.btnSwiper .swiper-slide').click(function () {
+    $('.btnswiper .swiper-slide').click(function () {
       if ($(this).hasClass('active')) {
         $(this).removeClass('active');
       }else{
@@ -68,7 +68,7 @@ $(function(){
     /**
      * @버튼스와이퍼
      */
-    var btnSwiper = new Swiper(".btnSwiper", {
+    var btnSwiper = new Swiper(".btnswiper", {
       slidesPerView: 3.5,
       spaceBetween: 5,
       breakpoints:{
@@ -89,7 +89,7 @@ $(function(){
     /**
      * @전문관스와이퍼
      */
-    var specialSwiper = new Swiper(".specialSwiper", {
+    var specialSwiper = new Swiper(".specialswiper", {
       slidesPerView: 1,
       spaceBetween: 15,
       breakpoints:{
@@ -107,7 +107,7 @@ $(function(){
     /**
      * @피드스와이퍼
      */
-    var feedSwiper = new Swiper(".feedSwiper", {
+    var feedSwiper = new Swiper(".feedswiper", {
       centeredSlides: true,
       loop: true,
       autoplay: {
@@ -123,7 +123,7 @@ $(function(){
     /**
      * @라이브스와이퍼
      */
-    var liveSwiper = new Swiper(".liveSwiper", {
+    var liveSwiper = new Swiper(".liveswiper", {
       slidesPerView: 2.5,
       spaceBetween: 5,
     });
@@ -132,7 +132,7 @@ $(function(){
      * @푸터사업자정보토글버튼
      */
     $('.footer .btn-info').click(function(){
-      $('.info').toggleClass('active');
+      $('.footer .info').toggleClass('active');
     })
 
     /**
@@ -148,7 +148,7 @@ $(function(){
     /**
      * @섹션브랜드의브랜드버튼누르면데이터연동
      */
-    $('.sc-brand .brandSwiper .swiper-slide').click(function(e){
+    $('.sc-brand .brandswiper .swiper-slide').click(function(e){
       e.preventDefault();
       sort = $(this).data('sort');
 
@@ -162,7 +162,7 @@ $(function(){
       }
     })
 
-    $('.sc-brand .brandSwiper .swiper-slide:first-child').trigger('click')
+    $('.sc-brand .brandswiper .swiper-slide:first-child').trigger('click')
 
     function prdList(num){
       fetch('./assets/data/productData.json')
