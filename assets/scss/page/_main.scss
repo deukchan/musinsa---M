@@ -1,5 +1,5 @@
 .sc-main{
-    .swiper.mainSwiper{
+    .mainswiper{
         .swiper-slide{
             a{
                 position: relative;
@@ -216,7 +216,7 @@
             color: rgb(170, 170, 170);
         }
     }
-    .swiper.brandSwiper{
+    .brandswiper{
         margin: 0 15px;
         .swiper-wrapper{
             margin-top: 8px;
@@ -350,7 +350,7 @@
             color: rgb(170, 170, 170);
         }
     }
-    .swiper.btnSwiper{
+    .btnswiper{
         margin-left: 15px;
         .swiper-slide{
             font-size: 11px;
@@ -370,7 +370,7 @@
             height: 100%;
         }
     }
-    .swiper.specialSwiper{
+    .specialswiper{
         margin-top: 16px;
         padding: 0 15px;
         .special-wrap{
@@ -470,7 +470,7 @@
 }
 .sc-feed{
     margin-top: 48px;
-    .swiper.feedSwiper{
+    .feedswiper{
         .swiper-slide{
                 .img-box{
                     img{width: 100%;}
@@ -590,7 +590,7 @@
         padding-bottom: 11px;
         padding-left: 15px;
     }
-    .swiper.liveSwiper{
+    .liveswiper{
         padding: 0 15px;
         .swiper-slide{
             .img-box{
